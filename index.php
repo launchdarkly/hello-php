@@ -9,16 +9,14 @@ $builder = (new LaunchDarkly\LDUserBuilder("bob@example.com"))
   ->lastName("Loblaw")
   ->custom(["groups" => "beta_testers"]);
 
-$user = $builder.build();
+$user = $builder->build();
 
 // TODO : Enter the key for your feature flag here
 if ($client->toggle("YOUR_FEATURE_FLAG_KEY", $user, false)) {
   // application code to show the feature
-  echo "Showing your feature to " . $user->key . "\n";
+  echo "Showing your feature to " . $user->getKey() . "\n";
 } else {
   // the code to run if the feature is off
-  echo "Not showing your feature to " . $user->key . "\n";
+  echo "Not showing your feature to " . $user->getKey() . "\n";
 }
-
-$client->flush();
 ?>
