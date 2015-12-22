@@ -2,7 +2,7 @@
 require 'vendor/autoload.php';
 
 // TODO : Enter your LaunchDarkly API key here
-$client = new LaunchDarkly\LDClient("YOU_API_KEY");
+$client = new LaunchDarkly\LDClient("YOUR_API_KEY");
 
 $builder = (new LaunchDarkly\LDUserBuilder("bob@example.com"))
   ->firstName("Bob")
