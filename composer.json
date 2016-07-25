@@ -1,5 +1,5 @@
 {
     "require": {
-        "launchdarkly/launchdarkly-php": "v0.6.2"
+        "launchdarkly/launchdarkly-php": "1.0.0"
     }
 }
