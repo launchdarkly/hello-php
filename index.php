@@ -1,5 +1,6 @@
 <?php
 require 'vendor/autoload.php';
+date_default_timezone_set('UTC');
 
 // TODO : Enter your LaunchDarkly SDK key here
 $client = new LaunchDarkly\LDClient("YOUR_SDK_KEY");
