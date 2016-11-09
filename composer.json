@@ -1,7 +1,6 @@
 {
     "require": {
-        "launchdarkly/launchdarkly-php": ">=2.0.0",
-        "monolog/monolog": ">=1.0.0",
+        "launchdarkly/launchdarkly-php": ">=2.0.1",
         "guzzlehttp/guzzle": "6.2.1",
         "kevinrob/guzzle-cache-middleware": "1.4.1"
     }
