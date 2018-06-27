@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "cb46e7ba8f6585a7386413bdaafa148a",
+    "content-hash": "70b300946ef374e6984a501c960b66ff",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -264,16 +264,16 @@
         },
         {
             "name": "launchdarkly/launchdarkly-php",
-            "version": "3.0.0",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/launchdarkly/php-client.git",
-                "reference": "30f759083f03c8dadf7b296fb070dddb6d4330f5"
+                "reference": "705032825c6bef0c457ef395384a9b541226975f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/launchdarkly/php-client/zipball/30f759083f03c8dadf7b296fb070dddb6d4330f5",
-                "reference": "30f759083f03c8dadf7b296fb070dddb6d4330f5",
+                "url": "https://api.github.com/repos/launchdarkly/php-client/zipball/705032825c6bef0c457ef395384a9b541226975f",
+                "reference": "705032825c6bef0c457ef395384a9b541226975f",
                 "shasum": ""
             },
             "require": {
@@ -282,6 +282,7 @@
                 "psr/log": "^1.0"
             },
             "require-dev": {
+                "friendsofphp/php-cs-fixer": "~2.2.19",
                 "guzzlehttp/guzzle": "^6.2.1",
                 "kevinrob/guzzle-cache-middleware": "^1.4.1",
                 "phpdocumentor/phpdocumentor": "^2.0",
@@ -316,7 +317,7 @@
                 "launchdarkly",
                 "launchdarkly php"
             ],
-            "time": "2018-02-21T22:04:42+00:00"
+            "time": "2018-06-27T22:53:07+00:00"
         },
         {
             "name": "monolog/monolog",
