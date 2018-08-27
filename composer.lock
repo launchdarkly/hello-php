@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "70b300946ef374e6984a501c960b66ff",
+    "content-hash": "862471c432d5970112b562de4ea6af17",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -264,16 +264,16 @@
         },
         {
             "name": "launchdarkly/launchdarkly-php",
-            "version": "3.2.0",
+            "version": "3.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/launchdarkly/php-client.git",
-                "reference": "705032825c6bef0c457ef395384a9b541226975f"
+                "reference": "985ffb24c87ada6c9088662d12142bcca3192a19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/launchdarkly/php-client/zipball/705032825c6bef0c457ef395384a9b541226975f",
-                "reference": "705032825c6bef0c457ef395384a9b541226975f",
+                "url": "https://api.github.com/repos/launchdarkly/php-client/zipball/985ffb24c87ada6c9088662d12142bcca3192a19",
+                "reference": "985ffb24c87ada6c9088662d12142bcca3192a19",
                 "shasum": ""
             },
             "require": {
@@ -317,7 +317,7 @@
                 "launchdarkly",
                 "launchdarkly php"
             ],
-            "time": "2018-06-27T22:53:07+00:00"
+            "time": "2018-08-27T18:43:27+00:00"
         },
         {
             "name": "monolog/monolog",
