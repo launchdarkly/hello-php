@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d5895637f9378e81682dce2519f1bfd4",
+    "content-hash": "09fd1de0f4864f64e0e0af03239f5b90",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -264,16 +264,16 @@
         },
         {
             "name": "launchdarkly/launchdarkly-php",
-            "version": "3.4.0",
+            "version": "3.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/launchdarkly/php-client.git",
-                "reference": "b475838ea79458591d19f94db781aeb4cd1936fb"
+                "reference": "b978359f299271f88721aa9d9b17fb416f59bdf0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/launchdarkly/php-client/zipball/b475838ea79458591d19f94db781aeb4cd1936fb",
-                "reference": "b475838ea79458591d19f94db781aeb4cd1936fb",
+                "url": "https://api.github.com/repos/launchdarkly/php-client/zipball/b978359f299271f88721aa9d9b17fb416f59bdf0",
+                "reference": "b978359f299271f88721aa9d9b17fb416f59bdf0",
                 "shasum": ""
             },
             "require": {
@@ -317,7 +317,7 @@
                 "launchdarkly",
                 "launchdarkly php"
             ],
-            "time": "2018-09-04T20:55:04+00:00"
+            "time": "2018-09-26T17:58:05+00:00"
         },
         {
             "name": "monolog/monolog",
