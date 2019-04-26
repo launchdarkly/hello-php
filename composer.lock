@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ee20654611f38d7e054721379a88ce06",
+    "content-hash": "845da9eb7f68e5af35cac3b031ede51f",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -266,16 +266,16 @@
         },
         {
             "name": "launchdarkly/launchdarkly-php",
-            "version": "3.5.1",
+            "version": "3.5.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/launchdarkly/php-client.git",
-                "reference": "61f8dcb598de7c6595ca25f39729e3875e40d837"
+                "url": "https://github.com/launchdarkly/php-server-sdk.git",
+                "reference": "2d59760d8855bf2b014c227874578198fc256144"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/launchdarkly/php-client/zipball/61f8dcb598de7c6595ca25f39729e3875e40d837",
-                "reference": "61f8dcb598de7c6595ca25f39729e3875e40d837",
+                "url": "https://api.github.com/repos/launchdarkly/php-server-sdk/zipball/2d59760d8855bf2b014c227874578198fc256144",
+                "reference": "2d59760d8855bf2b014c227874578198fc256144",
                 "shasum": ""
             },
             "require": {
@@ -318,12 +318,12 @@
                 }
             ],
             "description": "Official LaunchDarkly SDK for PHP",
-            "homepage": "https://github.com/launchdarkly/php-client",
+            "homepage": "https://github.com/launchdarkly/php-server-sdk",
             "keywords": [
                 "launchdarkly",
                 "launchdarkly php"
             ],
-            "time": "2019-04-03T18:36:51+00:00"
+            "time": "2019-04-26T18:56:14+00:00"
         },
         {
             "name": "monolog/monolog",

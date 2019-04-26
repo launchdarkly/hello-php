@@ -1,6 +1,6 @@
 {
   "require": {
-    "launchdarkly/launchdarkly-php": "3.5.1",
+    "launchdarkly/launchdarkly-php": "3.5.3",
     "guzzlehttp/guzzle": "6.2.1",
     "kevinrob/guzzle-cache-middleware": "1.4.1",
     "predis/predis": "1.0.*"
