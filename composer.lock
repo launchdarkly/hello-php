@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "845da9eb7f68e5af35cac3b031ede51f",
+    "content-hash": "cae2a5501fa7745f15e65f5d9ab32491",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -265,17 +265,17 @@
             "time": "2016-06-17T08:34:36+00:00"
         },
         {
-            "name": "launchdarkly/launchdarkly-php",
-            "version": "3.5.3",
+            "name": "launchdarkly/server-sdk",
+            "version": "3.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/launchdarkly/php-server-sdk.git",
-                "reference": "2d59760d8855bf2b014c227874578198fc256144"
+                "reference": "a75d288fdf9ede16d3beda298d7fde98408c4cd7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/launchdarkly/php-server-sdk/zipball/2d59760d8855bf2b014c227874578198fc256144",
-                "reference": "2d59760d8855bf2b014c227874578198fc256144",
+                "url": "https://api.github.com/repos/launchdarkly/php-server-sdk/zipball/a75d288fdf9ede16d3beda298d7fde98408c4cd7",
+                "reference": "a75d288fdf9ede16d3beda298d7fde98408c4cd7",
                 "shasum": ""
             },
             "require": {
@@ -323,7 +323,7 @@
                 "launchdarkly",
                 "launchdarkly php"
             ],
-            "time": "2019-04-26T18:56:14+00:00"
+            "time": "2019-05-10T22:37:21+00:00"
         },
         {
             "name": "monolog/monolog",
