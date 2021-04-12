@@ -30,8 +30,8 @@ jobs:
       - run:
           name: insert SDK key and flag key into demo code
           command: |
-            sed -i.bak "s/$sdkKey *= *\".*\"/$sdkKey = \"${LD_HELLO_WORLD_SDK_KEY}\"/" index.php
-            sed -i.bak "s/$featureFlagKey *= *\".*\"/$featureFlagKey = \"${LD_HELLO_WORLD_FLAG_KEY_WITH_TRUE_VALUE}\"/" index.php
+            sed -i.bak "s/\$sdkKey *= *\".*\"/\$sdkKey = \"${LD_HELLO_WORLD_SDK_KEY}\"/" index.php
+            sed -i.bak "s/\$featureFlagKey *= *\".*\"/\$featureFlagKey = \"${LD_HELLO_WORLD_FLAG_KEY_WITH_TRUE_VALUE}\"/" index.php
       - run:
           name: Install dependencies
           command: composer install

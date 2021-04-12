@@ -22,6 +22,6 @@ $user = (new LaunchDarkly\LDUserBuilder("example-user-key"))
 
 $flagValue = $client->variation($featureFlagKey, $user, false);
 
-echo "*** Feature flag '{$featureFlagKey}' is {$flagValue} for this user\n\n";
+echo "*** Feature flag '{$featureFlagKey}' is {$flagValue ? 'true' : 'false'} for this user\n\n";
 
 ?>
