@@ -1,23 +1,28 @@
 <?php
 require 'vendor/autoload.php';
-date_default_timezone_set('UTC');
 
-// TODO : Enter your LaunchDarkly SDK key here
-$client = new LaunchDarkly\LDClient("YOUR_SDK_KEY");
+# Set $sdkKey to your LaunchDarkly SDK key before running
+$sdkKey = "";
 
-$builder = (new LaunchDarkly\LDUserBuilder("bob@example.com"))
-  ->firstName("Bob")
-  ->lastName("Loblaw")
-  ->custom(["groups" => "beta_testers"]);
+# Set $featureFlagFey to the feature flag key you want to evaluate
+$featureFlagKey = "my-boolean-flag";
 
-$user = $builder->build();
-
-// TODO : Enter the key for your feature flag here
-if ($client->variation("YOUR_FEATURE_FLAG_KEY", $user, false)) {
-  // application code to show the feature
-  echo "Showing your feature to " . $user->getKey() . "\n";
-} else {
-  // the code to run if the feature is off
-  echo "Not showing your feature to " . $user->getKey() . "\n";
+if (!$sdkKey) {
+  echo "*** Please edit index.php to set $sdkKey to your LaunchDarkly SDK key first\n\n";
+  exit(1);
 }
+
+$client = new LaunchDarkly\LDClient($sdkKey);
+
+# Set up the user properties. This user should appear on your LaunchDarkly users dashboard
+# soon after you run the demo.
+$user = (new LaunchDarkly\LDUserBuilder("example-user-key"))
+  ->name("Sandy")
+  ->build();
+
+$flagValue = $client->variation($featureFlagKey, $user, false);
+$flagValueStr = $flagValue ? 'true' : 'false';
+
+echo "*** Feature flag '{$featureFlagKey}' is {$flagValueStr} for this user\n\n";
+
 ?>
