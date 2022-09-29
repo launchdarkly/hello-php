@@ -24,5 +24,3 @@ $flagValue = $client->variation($featureFlagKey, $user, false);
 $flagValueStr = $flagValue ? 'true' : 'false';
 
 echo "*** Feature flag '{$featureFlagKey}' is {$flagValueStr} for this user\n\n";
-
-?>
