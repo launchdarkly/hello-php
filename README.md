@@ -2,7 +2,7 @@
 
  Below, you'll find the basic build procedure, but for more comprehensive instructions, you can visit your [Quickstart page](https://app.launchdarkly.com/quickstart#/) or the [PHP SDK reference guide](https://docs.launchdarkly.com/sdk/server-side/php).
 
-This demo requires Python version 5.5 or higher.
+This demo requires PHP version 7.3 or higher.
 
 ## Build instructions 
 
