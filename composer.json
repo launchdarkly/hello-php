@@ -1,7 +1,7 @@
 {
   "require": {
     "launchdarkly/server-sdk": "5.*",
-    "guzzlehttp/guzzle": "6.*",
-    "kevinrob/guzzle-cache-middleware": "1.*"
+    "guzzlehttp/guzzle": "7.*",
+    "kevinrob/guzzle-cache-middleware": "4.*"
   }
 }
