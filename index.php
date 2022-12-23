@@ -14,13 +14,13 @@ if (!$sdkKey) {
 
 $client = new LaunchDarkly\LDClient($sdkKey);
 
-# Set up the user properties. This user should appear on your LaunchDarkly users dashboard
-# soon after you run the demo.
-$user = (new LaunchDarkly\LDUserBuilder("example-user-key"))
+# Set up the evaluation context. This context should appear on your LaunchDarkly
+# contexts dashboard soon after you run the demo.
+$context = LaunchDarkly\LDContext::builder("example-user-key")
   ->name("Sandy")
   ->build();
 
-$flagValue = $client->variation($featureFlagKey, $user, false);
+$flagValue = $client->variation($featureFlagKey, $context, false);
 $flagValueStr = $flagValue ? 'true' : 'false';
 
-echo "*** Feature flag '{$featureFlagKey}' is {$flagValueStr} for this user\n\n";
+echo "*** Feature flag '{$featureFlagKey}' is {$flagValueStr} for this context\n\n";
