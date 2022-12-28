@@ -2,7 +2,7 @@
 
  Below, you'll find the basic build procedure, but for more comprehensive instructions, you can visit your [Quickstart page](https://app.launchdarkly.com/quickstart#/) or the [PHP SDK reference guide](https://docs.launchdarkly.com/sdk/server-side/php).
 
-This demo requires PHP version 7.3 or higher.
+This demo requires PHP version 8.0 or higher.
 
 ## Build instructions 
 
@@ -18,4 +18,4 @@ $feature_flag_key = "my-flag";
 
 3. Run `php index.php`.
 
-You should see the message `"Feature flag '<flag key>' is <true/false> for this user"`.
+You should see the message `"Feature flag '<flag key>' is <true/false> for this context"`.
