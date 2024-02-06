@@ -4,7 +4,7 @@ require 'vendor/autoload.php';
 # Set $sdkKey to your LaunchDarkly SDK key before running
 $sdkKey = "";
 
-# Set $featureFlagFey to the feature flag key you want to evaluate
+# Set $featureFlagKey to the feature flag key you want to evaluate
 $featureFlagKey = "my-boolean-flag";
 
 if (!$sdkKey) {
