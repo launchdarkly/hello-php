@@ -1,14 +1,18 @@
 <?php
+
 require 'vendor/autoload.php';
 
-# Set $sdkKey to your LaunchDarkly SDK key before running
-$sdkKey = "";
+# Set the environment variable LAUNCHDARKLY_SERVER_KEY to your LaunchDarkly SDK key before running
+$sdkKey = getenv("LAUNCHDARKLY_SERVER_KEY") ?? "";
 
-# Set $featureFlagKey to the feature flag key you want to evaluate
-$featureFlagKey = "my-boolean-flag";
+# Set the environment variable LAUNCHDARKLY_FLAG_KEY to the feature flag key you want to evaluate
+$featureFlagKey = getenv("LAUNCHDARKLY_FLAG_KEY") ?? "";
 
 if (!$sdkKey) {
-  echo "*** Please edit index.php to set $sdkKey to your LaunchDarkly SDK key first\n\n";
+  echo "*** Please set the environment variable LAUNCHDARKLY_SERVER_KEY to your LaunchDarkly SDK key first\n\n";
+  exit(1);
+} else if (!$featureFlagKey) {
+  echo "*** Please set the environment variable LAUNCHDARKLY_FLAG_KEY to a boolean flag first\n\n";
   exit(1);
 }
 

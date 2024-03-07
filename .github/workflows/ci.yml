@@ -1,0 +1,36 @@
+name: Build and run
+on:
+  push:
+    branches: [ main ]
+    paths-ignore:
+      - '**.md' # Do not need to run CI for markdown changes.
+  pull_request:
+    branches: [ main ]
+    paths-ignore:
+      - '**.md'
+
+jobs:
+  build-and-run:
+    runs-on: ubuntu-latest
+
+    permissions:
+      id-token: write # Needed if using OIDC to get release secrets.
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@e6f75134d35752277f093989e72e140eaa222f35
+        with:
+          php-version: 8.1
+        env:
+          GITHUB_TOKEN: ${{ inputs.token }}
+
+      - name: Install dependencies
+        run: composer install --no-progress
+
+      - uses: launchdarkly/gh-actions/actions/verify-hello-app@verify-hello-app-v1.0.0
+        with:
+          use_server_key: true
+          role_arn: ${{ vars.AWS_ROLE_ARN }}
+          command: php -f index.php
