@@ -26,7 +26,10 @@ function showBanner() {
 $sdkKey = getenv("LAUNCHDARKLY_SERVER_KEY") ?? "";
 
 // Set $featureFlagKey to the feature flag key you want to evaluate.
-$featureFlagKey = getenv("LAUNCHDARKLY_FLAG_KEY") || "sample-feature";
+$featureFlagKey = getenv("LAUNCHDARKLY_FLAG_KEY");
+if (!$featureFlagKey) {
+    $featureFlagKey = 'sample-feature';
+}
 
 $ci = getenv("CI") ?? false;
 
