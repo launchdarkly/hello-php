@@ -6,6 +6,10 @@ function showEvaluationResult(string $key, bool $value) {
     echo PHP_EOL;
     echo sprintf("*** %s: The %s feature flag evaluates to %s", date("h:i:s"), $key, $value ? 'true' : 'false');
     echo PHP_EOL;
+
+    if ($value) {
+        showBanner();
+    }
 }
 
 function showBanner() {
@@ -50,20 +54,14 @@ $context = LaunchDarkly\LDContext::builder("example-user-key")
   ->build();
 
 
-$showBanner = true;
 $lastValue = null;
 do {
     $flagValue = $client->variation($featureFlagKey, $context, false);
 
     if ($flagValue !== $lastValue) {
         showEvaluationResult($featureFlagKey, $flagValue);
+        $lastValue = $flagValue;
     }
 
-    if ($showBanner && $flagValue) {
-        showBanner();
-        $showBanner = false;
-    }
-
-    $lastValue = $flagValue;
     sleep(1);
 } while(!$ci);
