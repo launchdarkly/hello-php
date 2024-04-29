@@ -4,7 +4,7 @@ require 'vendor/autoload.php';
 
 function showEvaluationResult(string $key, bool $value) {
     echo PHP_EOL;
-    echo sprintf("*** %s: The %s feature flag evaluates to %s", date("h:i:s"), $key, $value ? 'true' : 'false');
+    echo sprintf("*** The %s feature flag evaluates to %s", $key, $value ? 'true' : 'false');
     echo PHP_EOL;
 
     if ($value) {
@@ -27,7 +27,7 @@ function showBanner() {
 }
 
 // Set $sdkKey to your LaunchDarkly SDK key.
-$sdkKey = getenv("LAUNCHDARKLY_SERVER_KEY") ?? "";
+$sdkKey = getenv("LAUNCHDARKLY_SDK_KEY") ?? "";
 
 // Set $featureFlagKey to the feature flag key you want to evaluate.
 $featureFlagKey = getenv("LAUNCHDARKLY_FLAG_KEY");
@@ -38,10 +38,10 @@ if (!$featureFlagKey) {
 $ci = getenv("CI") ?? false;
 
 if (!$sdkKey) {
-  echo "*** Please set the environment variable LAUNCHDARKLY_SERVER_KEY to your LaunchDarkly SDK key first\n\n";
+  echo "*** Please set the environment variable LAUNCHDARKLY_SDK_KEY to your LaunchDarkly SDK key first" . PHP_EOL . PHP_EOL;
   exit(1);
 } else if (!$featureFlagKey) {
-  echo "*** Please set the environment variable LAUNCHDARKLY_FLAG_KEY to a boolean flag first\n\n";
+  echo "*** Please set the environment variable LAUNCHDARKLY_FLAG_KEY to a boolean flag first" . PHP_EOL . PHP_EOL;
   exit(1);
 }
 
