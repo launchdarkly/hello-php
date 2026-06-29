@@ -20,7 +20,7 @@ jobs:
       id-token: write # Needed if using OIDC to get release secrets.
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Setup PHP
         uses: shivammathur/setup-php@e6f75134d35752277f093989e72e140eaa222f35
