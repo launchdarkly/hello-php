@@ -3,6 +3,6 @@
     "launchdarkly/server-sdk": ">=6.0",
     "guzzlehttp/guzzle": "7.*",
     "guzzlehttp/psr7": ">=2.10.2",
-    "kevinrob/guzzle-cache-middleware": "^7.0"
+    "kevinrob/guzzle-cache-middleware": "^8.0"
   }
 }

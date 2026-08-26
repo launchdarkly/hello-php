@@ -4,7 +4,7 @@ We've built a simple console application that demonstrates how LaunchDarkly's SD
 
 Below, you'll find the build procedure. For more comprehensive instructions, you can visit your [Quickstart page](https://app.launchdarkly.com/quickstart#/) or the [PHP reference guide](https://docs.launchdarkly.com/sdk/server-side/php).
 
-This demo requires PHP 8.1 or higher.
+This demo requires PHP 8.2 or higher.
 
 ## Build instructions
 
